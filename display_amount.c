@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
 	fd=init_display(); //initialize the display and open file descriptor
 	//value = read_weight(); // get weight from sensor
 	value = round(value * 100) / 100; //round to 2 decimal place
-	write_display(fd,value);	//write temperature to display
+	write_display(fd,value);	//write valueto display
 	shutdown_display(fd); //close file descriptor
 	//}
 
